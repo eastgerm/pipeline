@@ -1,0 +1,22 @@
+.teamHome {
+  position: relative;
+  .team-name {
+    width: 200px;
+    position: relative;
+    border-radius: 6px;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+  }
+  .team-notes {
+    margin: 6px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 1px 0;
+    .notes {
+      background-color: white;
+      margin: 3px;
+      border-radius: 4px;
+    }
+  }
+}

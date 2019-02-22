@@ -1,0 +1,21 @@
+.pipe-item {
+  .notes{
+    position: relative;
+    flex: 1;
+    border-radius: 6px;
+    background-color: white;
+    padding: 16px;
+    margin: 2px 4px;
+    &:hover {
+      cursor: pointer;
+    }
+    .team-label {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+      font-size:12px;
+      background-color: red;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.pipe-header {
+  display: flex;
+  text-align: center;
+  .item {
+    background-color: rgba(0,0,0,0.1);
+    flex: 1;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 4px;
+  }
+}

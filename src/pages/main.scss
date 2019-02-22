@@ -1,0 +1,16 @@
+.main {
+  .pipe-line {
+    display: flex;
+    .pipe-container {
+      flex:1;
+      .pipe-body-wrapper {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4px 4px 4px;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.1);
+      }
+    }
+  }
+}
