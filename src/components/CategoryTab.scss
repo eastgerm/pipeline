@@ -1,5 +1,7 @@
 .CategoryTab {
   display: flex;
+  justify-content: flex-end;
+
   .category {
     border: solid .1px black;
     margin: 0 8px;

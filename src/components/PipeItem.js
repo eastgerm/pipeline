@@ -12,7 +12,7 @@ class PipeItem extends Component {
         {
           _.filter(teams, team => team.status === status)
           .map(item =>
-            <div className="notes" onClick={()=>history.push(`/teamHome/${item.name}`)}>
+            <div className="notes" onClick={()=>history.push(`/teamHome/${item.name}/${item.id}`)}>
               {item.notes}
               <div className="team-label" style={{backgroundColor: item.color}}>{item.name}</div>
             </div>)
