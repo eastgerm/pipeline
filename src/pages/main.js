@@ -14,13 +14,15 @@ class main extends Component {
       <div className="main">
         <CategoryTab/>
         <div className="pipe-line">
-        {_.map(pipeList, item =>
-          <div className="pipe-container">
-            <PipeHeader status={item}/>
-            <div className="pipe-body-wrapper">
-              <PipeItem status={item} history={history}/>
-            </div>
-          </div>)}
+          {
+            _.map(pipeList, item =>
+              <div className="pipe-container">
+                <PipeHeader status={item}/>
+                <div className="pipe-body-wrapper">
+                  <PipeItem status={item} history={history}/>
+                </div>
+              </div>)
+          }
         </div>
       </div>
     );

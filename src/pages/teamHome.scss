@@ -1,22 +1,56 @@
 .teamHome {
   position: relative;
-  .team-name {
-    width: 200px;
-    position: relative;
-    border-radius: 6px;
-    margin: 4px;
-    padding: 4px;
-    text-align: center;
-  }
-  .team-notes {
-    margin: 6px;
-    border-radius: 6px;
-    background-color: rgba(0,0,0,0.1);
-    padding: 1px 0;
-    .notes {
+
+  .team-home-header {
+    display: flex;
+
+    .team-name {
+      width: 200px;
+      position: relative;
+      border-radius: 6px;
+      margin: 4px;
+      padding: 4px;
+      text-align: center;
+    }
+
+    .team-home-btn {
+      font-weight: bold;
       background-color: white;
-      margin: 3px;
-      border-radius: 4px;
+
+    }
+  }
+
+  .team-home-body {
+    display: flex;
+    height: 300px;
+
+    .team-home-list {
+      flex: 1;
+      background-color: rgba(0,0,0,0.1);
+      .note {
+        background-color: white;
+        margin: 3px;
+        border-radius: 4px;
+        &.active {
+          background-color: gray;
+          color: white;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .team-home-note {
+      flex: 2;
+      margin: 0 4px;
+      //border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 1px 0;
+      .note {
+        width: 240px;
+        height: 120px;
+      }
     }
   }
 }
